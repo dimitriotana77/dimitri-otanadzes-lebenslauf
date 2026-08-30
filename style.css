@@ -1,1 +1,230 @@
+/* FINAL TEST CSS */
 
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    background: #0f0f0f !important;
+    color: #ffffff !important;
+    font-family: "Courier New", monospace !important;
+}
+
+header {
+    background: #050505 !important;
+    color: #ffffff !important;
+}
+
+nav {
+    min-height: 70px !important;
+    padding: 0 40px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+nav h1 {
+    color: #ffffff !important;
+}
+
+.nav-links ul {
+    list-style: none !important;
+
+    display: flex !important;
+
+    gap: 38px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-links a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.hero {
+    width: 100% !important;
+    max-width: 1400px !important;
+
+    min-height: 650px !important;
+
+    margin: 0 auto !important;
+
+    padding: 70px 50px !important;
+
+    display: grid !important;
+
+    grid-template-columns: 2fr 1fr !important;
+
+    gap: 50px !important;
+
+    align-items: center !important;
+
+    box-sizing: border-box !important;
+}
+
+.hero-text {
+    width: 100% !important;
+
+    padding: 55px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid rgba(0, 255, 170, 0.35) !important;
+
+    border-radius: 12px !important;
+
+    background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.hero-text h2 {
+    font-size: 44px !important;
+    line-height: 1.2 !important;
+
+    margin-bottom: 30px !important;
+}
+
+.highlight {
+    display: block !important;
+
+    color: #00ffaa !important;
+}
+
+.hero-description {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+
+    color: #eeeeee !important;
+}
+
+.github-button-container {
+    margin-top: 35px !important;
+}
+
+.cv-btn {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    padding: 14px 24px !important;
+
+    background: #00aa77 !important;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+
+    border-radius: 6px !important;
+}
+
+.hero-photo {
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+}
+
+.photo-container {
+    position: relative !important;
+
+    width: 330px !important;
+    height: 330px !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+}
+
+.profile-img {
+    position: relative !important;
+
+    z-index: 2 !important;
+
+    width: 280px !important;
+    height: 280px !important;
+
+    object-fit: cover !important;
+
+    border-radius: 50% !important;
+}
+
+.orbit {
+    position: absolute !important;
+
+    z-index: 1 !important;
+
+    width: 320px !important;
+    height: 320px !important;
+
+    border-radius: 50% !important;
+
+    border: 2px dashed #00ffaa !important;
+}
+
+.orbiter {
+    position: absolute !important;
+
+    width: 14px !important;
+    height: 14px !important;
+
+    background: #00ffaa !important;
+
+    border-radius: 50% !important;
+
+    top: 10px !important;
+    right: 25px !important;
+}
+
+.content-section {
+    width: calc(100% - 100px) !important;
+
+    max-width: 1300px !important;
+
+    margin: 30px auto 80px !important;
+
+    padding: 50px !important;
+
+    box-sizing: border-box !important;
+
+    background: #171717 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 12px !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .hero {
+        grid-template-columns: 1fr !important;
+
+        padding: 40px 20px !important;
+    }
+
+    .hero-text {
+        padding: 30px 25px !important;
+    }
+
+    .hero-photo {
+        margin-top: 30px !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+}
