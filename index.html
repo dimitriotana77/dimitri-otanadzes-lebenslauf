@@ -2,61 +2,132 @@
 <html lang="de">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dimitri Otanadze | IT-Quereinsteiger | QA & Software Testing</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Dimitri Otanadze – IT-Quereinsteiger mit Schwerpunkt Manual Software Testing, QA und Webentwicklung."
+    >
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta
+        name="author"
+        content="Dimitri Otanadze"
+    >
+
+    <title>
+        Dimitri Otanadze | IT-Quereinsteiger | QA & Software Testing
+    </title>
+
+
+    <!-- =====================================================
+         STYLESHEET
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+
 </head>
+
 
 <body>
 
-<header>
-    <nav>
 
-        <h1>DIMITRI.</h1>
+<!-- =========================================================
+     SITE HEADER
+========================================================= -->
 
-        <div class="nav-links" id="navLinks">
+<header class="site-header">
+
+    <nav
+        class="site-navigation"
+        aria-label="Hauptnavigation"
+    >
+
+
+        <!-- LOGO -->
+
+        <a
+            href="#"
+            class="site-logo"
+            aria-label="Dimitri Otanadze – Startseite"
+        >
+            DIMITRIO OTANADZE
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
 
             <ul>
 
                 <li>
-                    <a href="#" data-section="home">
+                    <a
+                        href="#"
+                        data-section="home"
+                    >
                         Home
                     </a>
                 </li>
 
+
                 <li>
-                    <a href="#" data-section="about">
+                    <a
+                        href="#"
+                        data-section="about"
+                    >
                         Über mich
                     </a>
                 </li>
 
+
                 <li>
-                    <a href="#" data-section="skills">
+                    <a
+                        href="#"
+                        data-section="skills"
+                    >
                         IT-Kenntnisse
                     </a>
                 </li>
 
+
                 <li>
-                    <a href="#" data-section="projects">
+                    <a
+                        href="#"
+                        data-section="projects"
+                    >
                         Projekte
                     </a>
                 </li>
 
-                <li>
-                    <a href="#" data-section="experience">
-                        Erfahrung
-                    </a>
-                </li>
 
                 <li>
-                    <a href="#" data-section="contact">
-                        Kontakt
+                    <a
+                        href="#"
+                        data-section="experience"
+                    >
+                        Erfahrung
                     </a>
                 </li>
 
@@ -64,30 +135,62 @@
 
         </div>
 
-        <div class="menu-icon" id="menuIcon">
-            <i class="fa fa-bars"></i>
-        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            type="button"
+            class="menu-icon"
+            id="menuIcon"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+        >
+
+            <i
+                class="fa fa-bars"
+                aria-hidden="true"
+            ></i>
+
+        </button>
 
     </nav>
+
 </header>
 
 
-<!-- HERO -->
 
-<section class="hero">
+<main>
 
-    <div class="info">
 
-        <p>IT-QUEREINSTEIGER · SOFTWARE TESTING · QA</p>
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
 
-        <h2>
+<section
+    class="hero"
+    aria-labelledby="hero-title"
+>
+
+
+    <!-- =====================================================
+         HERO TEXT
+    ====================================================== -->
+
+    <div class="hero-text">
+
+
+        <h1 id="hero-title">
+
             Hallo, ich bin
+
             <span class="highlight">
                 Dimitri Otanadze
             </span>
-        </h2>
 
-        <p class="desc">
+        </h1>
+
+
+        <p class="hero-description">
 
             IT-Quereinsteiger mit praktischen Kenntnissen
             im Bereich Software Testing, QA,
@@ -95,7 +198,8 @@
 
         </p>
 
-        <p class="desc">
+
+        <p class="hero-description">
 
             Mein berufliches Ziel ist der Einstieg als
             Manual Software Tester bzw. Junior QA Tester
@@ -104,51 +208,195 @@
 
         </p>
 
-        <a
-            href="https://github.com/dimitriotana77/mein-bewerbung"
-            target="_blank"
-            class="cv-btn"
-        >
-            GitHub Portfolio
-        </a>
 
-    </div>
+        <div class="github-button-container">
 
+            <a
+                href="https://github.com/dimitriotana77/mein-bewerbung"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cv-btn"
+            >
 
-    <div class="photo-container">
+                <i
+                    class="fa fa-github"
+                    aria-hidden="true"
+                ></i>
 
-        <img
-            src="profilbild.jpeg"
-            alt="Dimitri Otanadze"
-            class="profile-img"
-        >
+                GitHub Portfolio
 
-        <div class="orbit">
-            <div class="orbiter"></div>
+            </a>
+
         </div>
 
     </div>
 
+
+
+    <!-- =====================================================
+         PROFILE PHOTO
+    ====================================================== -->
+
+    <figure class="hero-photo">
+
+
+        <div class="photo-container">
+
+
+            <img
+                src="profilbild.jpeg"
+                alt="Dimitri Otanadze"
+                class="profile-img"
+            >
+
+
+            <!-- MOVING ORBIT -->
+
+            <div
+                class="orbit"
+                aria-hidden="true"
+            >
+
+                <span class="orbiter orbiter-one"></span>
+
+                <span class="orbiter orbiter-two"></span>
+
+                <span class="orbiter orbiter-three"></span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- PHOTO CAPTION -->
+
+        <figcaption class="hero-caption">
+
+            IT-Quereinsteiger · QA & Software Testing
+
+        </figcaption>
+
+
+    </figure>
+
 </section>
 
 
-<!-- DYNAMIC CONTENT -->
+
+<!-- =========================================================
+     DYNAMIC CONTENT
+========================================================= -->
 
 <section
     class="content-section"
     id="dynamicContent"
+    aria-live="polite"
 >
 
-    <h2>Willkommen auf meinem IT-Portfolio</h2>
+    <div class="content-section__inner">
 
-    <p>
-        Bitte wählen Sie einen Bereich aus dem Menü.
-    </p>
+        <h2>
+            Willkommen auf meinem IT-Portfolio
+        </h2>
+
+        <p>
+            Bitte wählen Sie einen Bereich aus dem Menü.
+        </p>
+
+    </div>
 
 </section>
 
 
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER / CONTACT
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="site-footer__inner">
+
+
+        <h2>
+            Kontakt
+        </h2>
+
+
+        <address class="contact-card">
+
+
+            <strong class="contact-name">
+                Dimitri Otanadze
+            </strong>
+
+
+            <p>
+                Friedrichshafen, Deutschland
+            </p>
+
+
+            <p>
+
+                Telefon:
+
+                <a
+                    href="tel:+491633647768"
+                >
+                    +49 163 3647768
+                </a>
+
+            </p>
+
+
+            <p>
+
+                E-Mail:
+
+                <a
+                    href="mailto:dimitriotana77@gmail.com"
+                >
+                    dimitriotana77@gmail.com
+                </a>
+
+            </p>
+
+
+            <p>
+
+                GitHub:
+
+                <a
+                    href="https://github.com/dimitriotana77"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    github.com/dimitriotana77
+                </a>
+
+            </p>
+
+
+        </address>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
 <script src="script.js"></script>
+
 
 </body>
 
