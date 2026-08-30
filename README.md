@@ -1,2 +1,2 @@
-# dimitri-lebenslauf
+# dimitri-otanadzes-lebenslauf
 elektronischer-lebenslauf
