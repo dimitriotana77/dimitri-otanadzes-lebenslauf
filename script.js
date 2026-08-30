@@ -33,7 +33,7 @@ document.addEventListener(
 
 
         /* =====================================================
-           CONTENT SECTIONS
+           DYNAMIC CONTENT
         ====================================================== */
 
         const sectionTexts = {
@@ -45,30 +45,108 @@ document.addEventListener(
 
             home: `
 
-                <section class="about-section">
+                <section
+                    class="about-section"
+                    aria-labelledby="home-title"
+                >
 
-                    <h2>
-                        IT-Quereinsteiger | Software Testing | QA
+                    <h2 id="home-title">
+                        Willkommen auf meinem IT-Portfolio
                     </h2>
 
 
-                    <p>
-                        Willkommen auf meinem persönlichen
-                        IT-Portfolio.
-                    </p>
+                    <div class="experience-grid">
 
 
-                    <p>
-                        Ich entwickle mich beruflich in Richtung
-                        Software Testing, QA und IT-Support.
-                    </p>
+                        <article class="card">
+
+                            <h3>
+                                Mein Profil
+                            </h3>
+
+                            <p>
+                                IT-Quereinsteiger mit Schwerpunkt
+                                Manual Software Testing, QA und
+                                Webentwicklung.
+                            </p>
+
+                        </article>
 
 
-                    <p>
-                        Mein kurzfristiges Ziel ist der Einstieg
-                        als Manual Software Tester bzw.
-                        Junior QA Tester.
-                    </p>
+                        <article class="card">
+
+                            <h3>
+                                Mein Ziel
+                            </h3>
+
+                            <p>
+                                Einstieg als Manual Software Tester
+                                bzw. Junior QA Tester und
+                                Weiterentwicklung im QA-Bereich.
+                            </p>
+
+                        </article>
+
+
+                        <article class="card">
+
+                            <h3>
+                                Meine Stärken
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    Strukturiertes Arbeiten
+                                </li>
+
+                                <li>
+                                    Lernbereitschaft
+                                </li>
+
+                                <li>
+                                    Fehleranalyse
+                                </li>
+
+                                <li>
+                                    Technisches Interesse
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                        <article class="card">
+
+                            <h3>
+                                Technischer Fokus
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    Manual Testing
+                                </li>
+
+                                <li>
+                                    QA
+                                </li>
+
+                                <li>
+                                    HTML & CSS
+                                </li>
+
+                                <li>
+                                    JavaScript Grundlagen
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                    </div>
 
                 </section>
 
@@ -82,42 +160,96 @@ document.addEventListener(
 
             about: `
 
-                <section class="about-section">
+                <section
+                    class="about-section"
+                    aria-labelledby="about-title"
+                >
 
-                    <h2>
+                    <h2 id="about-title">
                         Über mich
                     </h2>
 
 
-                    <p>
-                        Als IT-Quereinsteiger möchte ich meine
-                        bisherigen technischen Kenntnisse
-                        weiterentwickeln und praktische
-                        Berufserfahrung im IT-Bereich sammeln.
-                    </p>
+                    <div class="experience-grid">
 
 
-                    <p>
-                        Besonders interessiere ich mich für
-                        Software Testing, Fehleranalyse,
-                        Qualitätssicherung und technische
-                        Problemlösung.
-                    </p>
+                        <article class="card">
+
+                            <h3>
+                                Quereinstieg in die IT
+                            </h3>
+
+                            <p>
+                                Ich möchte meine bisherigen
+                                technischen Kenntnisse weiterentwickeln
+                                und praktische Berufserfahrung
+                                im IT-Bereich sammeln.
+                            </p>
+
+                        </article>
 
 
-                    <p>
-                        Ich arbeite strukturiert, lerne schnell
-                        und beschäftige mich gerne selbstständig
-                        mit neuen technischen Themen.
-                    </p>
+                        <article class="card">
+
+                            <h3>
+                                Software Testing
+                            </h3>
+
+                            <p>
+                                Mein besonderer Schwerpunkt liegt auf
+                                Manual Software Testing, Fehleranalyse,
+                                Qualitätssicherung und Bug Reporting.
+                            </p>
+
+                        </article>
 
 
-                    <p>
-                        Mein langfristiges Ziel ist eine
-                        Entwicklung vom Manual Software Tester
-                        über QA bis hin zum QA Engineer und
-                        später Automation Testing.
-                    </p>
+                        <article class="card">
+
+                            <h3>
+                                Arbeitsweise
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    Strukturiert
+                                </li>
+
+                                <li>
+                                    Zuverlässig
+                                </li>
+
+                                <li>
+                                    Lernbereit
+                                </li>
+
+                                <li>
+                                    Selbstständig
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                        <article class="card">
+
+                            <h3>
+                                Langfristiges Ziel
+                            </h3>
+
+                            <p>
+                                Mein langfristiges Ziel ist die
+                                Weiterentwicklung vom Manual Software
+                                Tester über QA bis hin zum QA Engineer
+                                und später Automation Testing.
+                            </p>
+
+                        </article>
+
+
+                    </div>
 
                 </section>
 
@@ -131,9 +263,12 @@ document.addEventListener(
 
             skills: `
 
-                <section class="about-section">
+                <section
+                    class="about-section"
+                    aria-labelledby="skills-title"
+                >
 
-                    <h2>
+                    <h2 id="skills-title">
                         IT-Kenntnisse
                     </h2>
 
@@ -182,7 +317,6 @@ document.addEventListener(
                         </article>
 
 
-
                         <article class="card">
 
                             <h3>
@@ -212,7 +346,6 @@ document.addEventListener(
                         </article>
 
 
-
                         <article class="card">
 
                             <h3>
@@ -240,7 +373,6 @@ document.addEventListener(
                             </ul>
 
                         </article>
-
 
 
                         <article class="card">
@@ -286,9 +418,12 @@ document.addEventListener(
 
             projects: `
 
-                <section class="about-section">
+                <section
+                    class="about-section"
+                    aria-labelledby="projects-title"
+                >
 
-                    <h2>
+                    <h2 id="projects-title">
                         Projekte
                     </h2>
 
@@ -327,7 +462,6 @@ document.addEventListener(
                         </article>
 
 
-
                         <article class="card">
 
                             <h3>
@@ -347,7 +481,6 @@ document.addEventListener(
                             </p>
 
                         </article>
-
 
 
                         <article class="card">
@@ -386,9 +519,12 @@ document.addEventListener(
 
             experience: `
 
-                <section class="about-section">
+                <section
+                    class="about-section"
+                    aria-labelledby="experience-title"
+                >
 
-                    <h2>
+                    <h2 id="experience-title">
                         Erfahrung & Ausbildung
                     </h2>
 
@@ -420,7 +556,6 @@ document.addEventListener(
                         </article>
 
 
-
                         <article class="card">
 
                             <h3>
@@ -447,7 +582,6 @@ document.addEventListener(
                         </article>
 
 
-
                         <article class="card">
 
                             <h3>
@@ -471,7 +605,6 @@ document.addEventListener(
                             </p>
 
                         </article>
-
 
 
                         <article class="card">
@@ -507,12 +640,11 @@ document.addEventListener(
            MOBILE MENU
         ====================================================== */
 
-        if (menuIcon) {
+        if (menuIcon && navLinks) {
 
             menuIcon.addEventListener(
                 "click",
                 function () {
-
 
                     const isOpen =
                         navLinks.classList.toggle(
@@ -522,9 +654,8 @@ document.addEventListener(
 
                     menuIcon.setAttribute(
                         "aria-expanded",
-                        isOpen
+                        String(isOpen)
                     );
-
 
                 }
             );
@@ -540,11 +671,9 @@ document.addEventListener(
         links.forEach(
             function (link) {
 
-
                 link.addEventListener(
                     "click",
                     function (event) {
-
 
                         event.preventDefault();
 
@@ -556,7 +685,7 @@ document.addEventListener(
 
 
                         /* =====================================
-                           LOAD CONTENT
+                           LOAD DYNAMIC CONTENT
                         ====================================== */
 
                         if (
@@ -570,9 +699,8 @@ document.addEventListener(
                         }
 
 
-
                         /* =====================================
-                           ACTIVE LINK
+                           ACTIVE NAVIGATION LINK
                         ====================================== */
 
                         links.forEach(
@@ -589,7 +717,6 @@ document.addEventListener(
                         this.classList.add(
                             "active-link"
                         );
-
 
 
                         /* =====================================
@@ -613,7 +740,6 @@ document.addEventListener(
                             );
 
                         }
-
 
 
                         /* =====================================
@@ -676,6 +802,7 @@ document.addEventListener(
             );
 
         }
+
 
     }
 );
