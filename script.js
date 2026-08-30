@@ -39,223 +39,104 @@ document.addEventListener(
         const sectionTexts = {
 
 
-            /* =================================================
-               HOME
-            ================================================== */
+        /* =================================================
+   HOME — SINGLE DYNAMIC CARD
+================================================== */
 
-            home: `
+home: `
 
-                <section
-                    class="about-section"
-                    aria-labelledby="home-title"
-                >
+    <section
+        class="about-section"
+        aria-labelledby="home-title"
+    >
 
-                    <h2 id="home-title">
-                        Willkommen auf meinem IT-Portfolio
-                    </h2>
+        <article class="card single-card">
 
+            <h2 id="home-title">
+                Willkommen auf meinem IT-Portfolio
+            </h2>
 
-                    <div class="experience-grid">
 
+            <p>
+                IT-Quereinsteiger mit Schwerpunkt
+                Manual Software Testing, QA und
+                Webentwicklung.
+            </p>
 
-                        <article class="card">
 
-                            <h3>
-                                Mein Profil
-                            </h3>
+            <p>
+                Ich entwickle mich beruflich in Richtung
+                Software Testing, QA und IT-Support.
+            </p>
 
-                            <p>
-                                IT-Quereinsteiger mit Schwerpunkt
-                                Manual Software Testing, QA und
-                                Webentwicklung.
-                            </p>
 
-                        </article>
+            <p>
+                Mein kurzfristiges Ziel ist der Einstieg
+                als Manual Software Tester bzw.
+                Junior QA Tester.
+            </p>
 
+        </article>
 
-                        <article class="card">
+    </section>
 
-                            <h3>
-                                Mein Ziel
-                            </h3>
+`,
 
-                            <p>
-                                Einstieg als Manual Software Tester
-                                bzw. Junior QA Tester und
-                                Weiterentwicklung im QA-Bereich.
-                            </p>
 
-                        </article>
+ /* =================================================
+   ÜBER MICH — SINGLE DYNAMIC CARD
+================================================== */
 
+about: `
 
-                        <article class="card">
+    <section
+        class="about-section"
+        aria-labelledby="about-title"
+    >
 
-                            <h3>
-                                Meine Stärken
-                            </h3>
+        <article class="card single-card">
 
-                            <ul>
+            <h2 id="about-title">
+                Über mich
+            </h2>
 
-                                <li>
-                                    Strukturiertes Arbeiten
-                                </li>
 
-                                <li>
-                                    Lernbereitschaft
-                                </li>
+            <p>
+                Als IT-Quereinsteiger möchte ich meine
+                bisherigen technischen Kenntnisse
+                weiterentwickeln und praktische
+                Berufserfahrung im IT-Bereich sammeln.
+            </p>
 
-                                <li>
-                                    Fehleranalyse
-                                </li>
 
-                                <li>
-                                    Technisches Interesse
-                                </li>
+            <p>
+                Besonders interessiere ich mich für
+                Software Testing, Fehleranalyse,
+                Qualitätssicherung und technische
+                Problemlösung.
+            </p>
 
-                            </ul>
 
-                        </article>
+            <p>
+                Ich arbeite strukturiert, lerne schnell
+                und beschäftige mich gerne selbstständig
+                mit neuen technischen Themen.
+            </p>
 
 
-                        <article class="card">
+            <p>
+                Mein langfristiges Ziel ist eine
+                Entwicklung vom Manual Software Tester
+                über QA bis hin zum QA Engineer und
+                später Automation Testing.
+            </p>
 
-                            <h3>
-                                Technischer Fokus
-                            </h3>
+        </article>
 
-                            <ul>
+    </section>
 
-                                <li>
-                                    Manual Testing
-                                </li>
-
-                                <li>
-                                    QA
-                                </li>
-
-                                <li>
-                                    HTML & CSS
-                                </li>
-
-                                <li>
-                                    JavaScript Grundlagen
-                                </li>
-
-                            </ul>
-
-                        </article>
-
-
-                    </div>
-
-                </section>
-
-            `,
-
-
-
-            /* =================================================
-               ÜBER MICH
-            ================================================== */
-
-            about: `
-
-                <section
-                    class="about-section"
-                    aria-labelledby="about-title"
-                >
-
-                    <h2 id="about-title">
-                        Über mich
-                    </h2>
-
-
-                    <div class="experience-grid">
-
-
-                        <article class="card">
-
-                            <h3>
-                                Quereinstieg in die IT
-                            </h3>
-
-                            <p>
-                                Ich möchte meine bisherigen
-                                technischen Kenntnisse weiterentwickeln
-                                und praktische Berufserfahrung
-                                im IT-Bereich sammeln.
-                            </p>
-
-                        </article>
-
-
-                        <article class="card">
-
-                            <h3>
-                                Software Testing
-                            </h3>
-
-                            <p>
-                                Mein besonderer Schwerpunkt liegt auf
-                                Manual Software Testing, Fehleranalyse,
-                                Qualitätssicherung und Bug Reporting.
-                            </p>
-
-                        </article>
-
-
-                        <article class="card">
-
-                            <h3>
-                                Arbeitsweise
-                            </h3>
-
-                            <ul>
-
-                                <li>
-                                    Strukturiert
-                                </li>
-
-                                <li>
-                                    Zuverlässig
-                                </li>
-
-                                <li>
-                                    Lernbereit
-                                </li>
-
-                                <li>
-                                    Selbstständig
-                                </li>
-
-                            </ul>
-
-                        </article>
-
-
-                        <article class="card">
-
-                            <h3>
-                                Langfristiges Ziel
-                            </h3>
-
-                            <p>
-                                Mein langfristiges Ziel ist die
-                                Weiterentwicklung vom Manual Software
-                                Tester über QA bis hin zum QA Engineer
-                                und später Automation Testing.
-                            </p>
-
-                        </article>
-
-
-                    </div>
-
-                </section>
-
-            `,
-
-
+`,
+            
 
             /* =================================================
                IT-KENNTNISSE
