@@ -333,7 +333,7 @@ about: `
 
 
                             <a
-                                href="https://github.com/dimitriotana77/mein-bewerbung"
+                                href="https://github.com/dimitriotana77"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
