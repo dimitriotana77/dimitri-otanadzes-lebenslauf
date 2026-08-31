@@ -426,7 +426,7 @@ about: `
 
 
                             <p>
-                                Schwerpunkt Systemgastronomie
+                                Schwerpunkt: Systemgastronomie
                             </p>
 
 
