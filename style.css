@@ -1,5 +1,5 @@
 /* =========================================================
-   GLOBAL
+   GLOBAL RESET
 ========================================================= */
 
 * {
@@ -47,6 +47,12 @@ button {
 
 .site-header {
 
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
     width: 100%;
 
     background: #050505;
@@ -54,12 +60,6 @@ button {
     border-bottom:
         1px solid
         rgba(255, 255, 255, 0.12);
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 1000;
 }
 
 
@@ -78,6 +78,11 @@ button {
 }
 
 
+
+/* =========================================================
+   LOGO
+========================================================= */
+
 .site-logo {
 
     color: #ffffff;
@@ -94,9 +99,15 @@ button {
 }
 
 
+.site-logo:hover {
+
+    color: #00ffaa;
+}
+
+
 
 /* =========================================================
-   NAVIGATION
+   DESKTOP NAVIGATION
 ========================================================= */
 
 .nav-links ul {
@@ -144,7 +155,9 @@ button {
 
     display: none;
 
-    border: 0;
+    padding: 5px;
+
+    border: none;
 
     background: transparent;
 
@@ -153,8 +166,6 @@ button {
     font-size: 30px;
 
     cursor: pointer;
-
-    padding: 5px;
 }
 
 
@@ -179,6 +190,11 @@ button {
 
     display: grid;
 
+    /*
+       TEXT = 2/3
+       PHOTO = 1/3
+    */
+
     grid-template-columns:
         2fr 1fr;
 
@@ -190,7 +206,7 @@ button {
 
 
 /* =========================================================
-   HERO TEXT CONTAINER
+   HERO TEXT
 ========================================================= */
 
 .hero-text {
@@ -200,14 +216,14 @@ button {
     padding:
         55px;
 
+    background:
+        rgba(255, 255, 255, 0.025);
+
     border:
         1px solid
         rgba(0, 255, 170, 0.35);
 
     border-radius: 14px;
-
-    background:
-        rgba(255, 255, 255, 0.025);
 }
 
 
@@ -216,11 +232,11 @@ button {
     margin:
         0 0 30px;
 
+    color: #ffffff;
+
     font-size: 44px;
 
     line-height: 1.2;
-
-    color: #ffffff;
 }
 
 
@@ -237,6 +253,11 @@ button {
         rgba(0, 255, 170, 0.2);
 }
 
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
 
 .hero-description {
 
@@ -293,7 +314,8 @@ button {
 
     transition:
         background 0.25s ease,
-        transform 0.25s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 
@@ -303,12 +325,16 @@ button {
 
     transform:
         translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 255, 170, 0.15);
 }
 
 
 
 /* =========================================================
-   PHOTO AREA
+   HERO PHOTO
 ========================================================= */
 
 .hero-photo {
@@ -321,9 +347,9 @@ button {
 
     flex-direction: column;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 
     text-align: center;
 }
@@ -339,11 +365,16 @@ button {
 
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 }
 
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
 
 .profile-img {
 
@@ -371,7 +402,7 @@ button {
 
 
 /* =========================================================
-   ORBIT
+   PHOTO ORBIT
 ========================================================= */
 
 .orbit {
@@ -412,9 +443,6 @@ button {
     box-shadow:
         0 0 14px
         #00ffaa;
-
-    transform-origin:
-        50% 150px;
 }
 
 
@@ -446,9 +474,9 @@ button {
 
 .orbiter-three {
 
-    bottom: 10px;
-
     right: 25px;
+
+    bottom: 10px;
 
     width: 9px;
 
@@ -549,7 +577,7 @@ button {
 
 
 /* =========================================================
-   DYNAMIC CONTENT
+   DYNAMIC CONTENT SECTION
 ========================================================= */
 
 .content-section {
@@ -565,8 +593,7 @@ button {
     padding:
         50px;
 
-    background:
-        #171717;
+    background: #171717;
 
     border:
         1px solid
@@ -602,7 +629,7 @@ button {
 
 
 /* =========================================================
-   DYNAMIC CONTENT CARDS
+   ABOUT SECTION
 ========================================================= */
 
 .about-section {
@@ -617,7 +644,11 @@ button {
 
     margin-bottom: 30px;
 
+    color: #ffffff;
+
     font-size: 32px;
+
+    line-height: 1.3;
 }
 
 
@@ -631,19 +662,28 @@ button {
 }
 
 
+
+/* =========================================================
+   CONTENT GRID
+   DESKTOP — 4 CARDS
+========================================================= */
+
 .experience-grid {
 
     display: grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(4, minmax(0, 1fr));
 
     gap: 25px;
+
+    align-items: stretch;
 }
 
 
+
 /* =========================================================
-   CONTENT CARDS — IT-KENNTNISSE / PROJEKTE / ERFAHRUNG
+   CONTENT CARDS
 ========================================================= */
 
 .card {
@@ -670,6 +710,7 @@ button {
 }
 
 
+
 /* =========================================================
    CARD HOVER — GREEN GLOW
 ========================================================= */
@@ -687,6 +728,7 @@ button {
         0 12px 30px
         rgba(0, 255, 170, 0.18);
 }
+
 
 
 /* =========================================================
@@ -711,10 +753,6 @@ button {
 }
 
 
-/* =========================================================
-   CARD TITLE — HOVER
-========================================================= */
-
 .card:hover h3 {
 
     color: #ffffff;
@@ -725,8 +763,9 @@ button {
 }
 
 
+
 /* =========================================================
-   CARD STRONG TEXT
+   CARD STRONG
 ========================================================= */
 
 .card strong {
@@ -739,6 +778,7 @@ button {
 
     font-size: 17px;
 }
+
 
 
 /* =========================================================
@@ -758,6 +798,7 @@ button {
 }
 
 
+
 /* =========================================================
    CARD LIST
 ========================================================= */
@@ -771,10 +812,6 @@ button {
     list-style: none;
 }
 
-
-/* =========================================================
-   CARD LIST ITEMS
-========================================================= */
 
 .card li {
 
@@ -791,14 +828,9 @@ button {
     line-height: 1.7;
 
     transition:
-        color 0.2s ease,
-        padding-left 0.2s ease;
+        color 0.2s ease;
 }
 
-
-/* =========================================================
-   GREEN ARROW BEFORE EACH ITEM
-========================================================= */
 
 .card li::before {
 
@@ -812,14 +844,11 @@ button {
 }
 
 
-/* =========================================================
-   LIST ITEMS — HOVER
-========================================================= */
-
 .card:hover li {
 
     color: #ffffff;
 }
+
 
 
 /* =========================================================
@@ -838,10 +867,6 @@ button {
 }
 
 
-/* =========================================================
-   CARD LINKS — HOVER
-========================================================= */
-
 .card a:hover {
 
     color: #ffffff;
@@ -853,8 +878,11 @@ button {
         rgba(0, 255, 170, 0.5);
 }
 
+
+
 /* =========================================================
-   SINGLE CARD — HOME / ÜBER MICH
+   SINGLE CARD
+   HOME / ÜBER MICH
 ========================================================= */
 
 .single-card {
@@ -864,8 +892,8 @@ button {
     min-height: auto;
 
     padding: 40px;
-
 }
+
 
 
 /* =========================================================
@@ -884,6 +912,7 @@ button {
 
     line-height: 1.3;
 }
+
 
 
 /* =========================================================
@@ -909,36 +938,6 @@ button {
 }
 
 
-/* =========================================================
-   SINGLE CARD — MOBILE
-========================================================= */
-
-
-@media (max-width: 650px) {
-
-    .single-card {
-
-        padding: 30px 25px;
-
-    }
-
-
-    .single-card h2 {
-
-        font-size: 25px;
-
-    }
-
-
-    .single-card p {
-
-        font-size: 15px;
-
-        line-height: 1.7;
-
-    }
-
-}
 
 /* =========================================================
    FOOTER
@@ -975,16 +974,22 @@ button {
 
     margin-bottom: 30px;
 
+    color: #ffffff;
+
     font-size: 32px;
 }
 
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact-card {
 
     max-width: 700px;
 
-    padding:
-        35px;
+    padding: 35px;
 
     background: #101010;
 
@@ -1031,6 +1036,8 @@ button {
 
 .contact-card a:hover {
 
+    color: #ffffff;
+
     text-decoration: underline;
 }
 
@@ -1038,10 +1045,15 @@ button {
 
 /* =========================================================
    TABLET
+   651px – 1000px
 ========================================================= */
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
 
+
+    /* =====================================================
+       NAVIGATION
+    ====================================================== */
 
     .site-navigation {
 
@@ -1055,6 +1067,11 @@ button {
         gap: 20px;
     }
 
+
+
+    /* =====================================================
+       HERO
+    ====================================================== */
 
     .hero {
 
@@ -1096,6 +1113,11 @@ button {
     }
 
 
+
+    /* =====================================================
+       PHOTO
+    ====================================================== */
+
     .photo-container {
 
         width: 300px;
@@ -1126,6 +1148,25 @@ button {
     }
 
 
+
+    /* =====================================================
+       CARDS — TWO PER ROW
+    ====================================================== */
+
+    .experience-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+
+    /* =====================================================
+       CONTENT
+    ====================================================== */
+
     .content-section {
 
         width:
@@ -1148,10 +1189,15 @@ button {
 
 /* =========================================================
    MOBILE
+   MAX 650px
 ========================================================= */
 
 @media (max-width: 650px) {
 
+
+    /* =====================================================
+       HEADER
+    ====================================================== */
 
     .site-navigation {
 
@@ -1164,15 +1210,39 @@ button {
 
     .site-logo {
 
-        font-size: 21px;
+        font-size: 20px;
+
+        letter-spacing: 0.5px;
     }
 
+
+
+    /* =====================================================
+       MOBILE MENU BUTTON
+    ====================================================== */
 
     .menu-icon {
 
         display: block;
+
+        border: none;
+
+        background: transparent;
+
+        color: #00ffaa;
+
+        font-size: 28px;
+
+        cursor: pointer;
+
+        padding: 5px;
     }
 
+
+
+    /* =====================================================
+       MOBILE NAVIGATION
+    ====================================================== */
 
     .nav-links {
 
@@ -1190,11 +1260,13 @@ button {
 
         border-top:
             1px solid
-            rgba(255, 255, 255, 0.1);
+            rgba(255, 255, 255, 0.10);
 
         border-bottom:
             1px solid
-            rgba(255, 255, 255, 0.1);
+            rgba(255, 255, 255, 0.10);
+
+        z-index: 999;
     }
 
 
@@ -1206,11 +1278,15 @@ button {
 
     .nav-links ul {
 
+        display: flex;
+
         flex-direction: column;
 
         align-items: stretch;
 
         gap: 0;
+
+        margin: 0;
 
         padding:
             10px 20px 20px;
@@ -1227,6 +1303,8 @@ button {
 
         display: block;
 
+        width: 100%;
+
         padding:
             14px 5px;
 
@@ -1234,16 +1312,25 @@ button {
     }
 
 
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
     .hero {
+
+        display: grid;
 
         grid-template-columns: 1fr;
 
         min-height: auto;
 
-        padding:
-            40px 20px 60px;
+        width: 100%;
 
-        gap: 40px;
+        padding:
+            35px 20px 55px;
+
+        gap: 35px;
     }
 
 
@@ -1252,48 +1339,15 @@ button {
     .hero-photo {
 
         order: -1;
-    }
-
-
-    .hero-text {
-
-        padding:
-            30px 25px;
-    }
-
-
-    .hero-text h1 {
-
-        font-size: 32px;
-
-        line-height: 1.25;
-    }
-
-
-    .hero-description {
-
-        font-size: 15px;
-
-        line-height: 1.7;
-    }
-
-
-    .github-button-container {
-
-        margin-top: 28px;
-    }
-
-
-    .cv-btn {
 
         width: 100%;
-
-        justify-content: center;
-
-        padding:
-            15px 20px;
     }
 
+
+
+    /* =====================================================
+       PHOTO
+    ====================================================== */
 
     .photo-container {
 
@@ -1319,21 +1373,115 @@ button {
     }
 
 
+
+    /* =====================================================
+       PHOTO CAPTION
+    ====================================================== */
+
     .hero-caption {
 
         margin-top: 18px;
 
-        font-size: 15px;
+        max-width: 300px;
 
         color: #e0e0e0;
+
+        font-size: 15px;
 
         font-weight: 600;
 
         letter-spacing: 0.3px;
 
         line-height: 1.5;
+
+        text-align: center;
     }
 
+
+
+    /* =====================================================
+       HERO TEXT
+    ====================================================== */
+
+    .hero-text {
+
+        width: 100%;
+
+        padding:
+            30px 25px;
+
+        border-radius: 12px;
+    }
+
+
+    .hero-text h1 {
+
+        margin:
+            0 0 25px;
+
+        font-size: 32px;
+
+        line-height: 1.3;
+    }
+
+
+    .highlight {
+
+        display: block;
+
+        margin-top: 8px;
+    }
+
+
+    .hero-description {
+
+        margin:
+            0 0 20px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+
+    /* =====================================================
+       GITHUB BUTTON
+    ====================================================== */
+
+    .github-button-container {
+
+        width: 100%;
+
+        margin-top: 28px;
+    }
+
+
+    .cv-btn {
+
+        width: 100%;
+
+        min-height: 50px;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        padding:
+            14px 20px;
+
+        font-size: 15px;
+    }
+
+
+
+    /* =====================================================
+       DYNAMIC CONTENT
+    ====================================================== */
 
     .content-section {
 
@@ -1344,43 +1492,194 @@ button {
             20px auto 60px;
 
         padding:
-            30px 25px;
+            30px 20px;
+
+        border-radius: 12px;
     }
 
 
     .content-section h2 {
 
+        margin-top: 0;
+
         font-size: 25px;
+
+        line-height: 1.35;
     }
 
 
     .content-section p {
 
         font-size: 15px;
+
+        line-height: 1.7;
     }
 
 
-    .experience-grid {
 
-        grid-template-columns: 1fr;
+    /* =====================================================
+       ABOUT SECTION
+    ====================================================== */
 
-        gap: 18px;
-    }
+    .about-section {
 
-
-    .card {
-
-        padding: 25px;
+        width: 100%;
     }
 
 
     .about-section h2 {
 
+        margin-top: 0;
+
+        margin-bottom: 25px;
+
         font-size: 27px;
+
+        line-height: 1.35;
     }
 
 
+    .about-section p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+
+    /* =====================================================
+       DYNAMIC CARDS
+       ONE CARD PER ROW
+    ====================================================== */
+
+    .experience-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        width: 100%;
+    }
+
+
+
+    /* =====================================================
+       NORMAL CARD
+    ====================================================== */
+
+    .card {
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: auto;
+
+        padding:
+            25px;
+
+        border-radius: 12px;
+    }
+
+
+    .card h3 {
+
+        margin-top: 0;
+
+        margin-bottom: 16px;
+
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+
+    .card p {
+
+        margin:
+            0 0 16px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .card li {
+
+        margin-bottom: 9px;
+
+        padding-left: 20px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+
+    /* =====================================================
+       SINGLE CARD
+       HOME / ÜBER MICH
+    ====================================================== */
+
+    .single-card {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding:
+            30px 25px;
+
+        border-radius: 12px;
+    }
+
+
+    .single-card h2 {
+
+        margin-top: 0;
+
+        margin-bottom: 22px;
+
+        color: #00ffaa;
+
+        font-size: 25px;
+
+        line-height: 1.35;
+    }
+
+
+    .single-card p {
+
+        margin:
+            0 0 18px;
+
+        color: #dddddd;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .single-card p:last-child {
+
+        margin-bottom: 0;
+    }
+
+
+
+    /* =====================================================
+       FOOTER
+    ====================================================== */
+
     .site-footer__inner {
+
+        width: 100%;
 
         padding:
             45px 20px 35px;
@@ -1389,14 +1688,29 @@ button {
 
     .site-footer h2 {
 
+        margin-top: 0;
+
+        margin-bottom: 25px;
+
         font-size: 28px;
+
+        line-height: 1.35;
     }
 
 
+
+    /* =====================================================
+       CONTACT CARD
+    ====================================================== */
+
     .contact-card {
 
+        width: 100%;
+
         padding:
-            28px 25px;
+            28px 22px;
+
+        border-radius: 12px;
     }
 
 
@@ -1410,7 +1724,34 @@ button {
 
         font-size: 15px;
 
+        line-height: 1.7;
+
         overflow-wrap: anywhere;
+    }
+
+
+    .contact-card a {
+
+        overflow-wrap: anywhere;
+    }
+
+
+
+    /* =====================================================
+       MOBILE CARD HOVER
+    ====================================================== */
+
+    .card:hover {
+
+        transform:
+            translateY(-4px);
+
+        border-color:
+            #00ffaa;
+
+        box-shadow:
+            0 10px 25px
+            rgba(0, 255, 170, 0.15);
     }
 
 }
@@ -1424,6 +1765,7 @@ button {
 @media (prefers-reduced-motion: reduce) {
 
     html {
+
         scroll-behavior: auto;
     }
 
@@ -1434,7 +1776,9 @@ button {
     }
 
 
-    .cv-btn {
+    .card,
+    .cv-btn,
+    .nav-links a {
 
         transition: none;
     }
