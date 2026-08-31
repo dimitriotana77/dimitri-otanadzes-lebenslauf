@@ -421,7 +421,7 @@ about: `
 
 
                             <strong>
-                                Fachkraft für Gastronomie
+                                Ausbildung als Fachkraft für Gastronomie
                             </strong>
 
 
